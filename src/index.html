@@ -2,13 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do list</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c25278351.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-
-    <script src="index.js"></script>
+    <section>
+        <div class="container">
+            <div class="list-container">
+                <p>Today's To Do</p>
+                <form id="taskForm" action="POST" autocomplete="off">
+                    <input class="input-task" type="text" name="New Task" id="newTask" placeholder="Add to your list..." required>
+                    <button id="taskSubmit" type="submit"><i class="fas fa-arrow-circle-right fa-2x"></i></button>
+                </form>
+                <ul class="list"></ul>
+                <div class="container">
+                    <button class="clearer" type="button">Clear all completed</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
