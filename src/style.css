@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-weight: 300;
+  padding: 10px 16px;
+  font-size: 20px;
+  margin: 5px;
+  font-family: sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.clearer {
+  border: none;
+  padding: 12px;
+  color: #888;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.clearer:hover {
+  color: #6948fb;
+  cursor: pointer;
+}
+
+.drag {
+  margin-left: 8px;
+  cursor: grab;
+  color: gray;
+  font-size: 18px;
+}
+
+.drag:active {
+  cursor: grabbing;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.list-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, auto); /* stylelint-disable-line */
+  background-color: whitesmoke;
+  row-gap: 2px;
+  box-shadow: 1px 1px 8px gray;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: whitesmoke;
+  row-gap: 2px;
+}
+
+.task {
+  background-color: white;
+  display: flex;
+  padding: 16px 16px;
+  position: relative;
+}
+
+.input-task {
+  font-size: medium;
+  background-color: white;
+  padding: 16px 12px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  border: 2px solid transparent;
+}
+
+.input-task::placeholder {
+  font-style: italic;
+  color: #bbb;
+}
+
+.input-task:focus {
+  outline: none;
+  background: white;
+}
+
+.task-check {
+  margin-right: 16px;
+}
+
+.task-text {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+}
+
+.task-text:focus {
+  outline: none;
+}
+
+#taskForm {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#taskSubmit {
+  float: right;
+  border: none;
+  background: white;
+  padding: 8px;
+  color: #888;
+  cursor: pointer;
+  outline: none;
+}
+
+#taskSubmit:hover {
+  color: #3ac47d;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.over {
+  background-color: rgb(241, 241, 241);
+}
+
+.del-container:hover {
+  background-color: rgb(226, 28, 28);
+  display: block;
+  cursor: pointer;
+  border-radius: 5px;
+}
